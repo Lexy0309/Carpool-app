@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{"sign_in" | translate}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <img src="assets/imgs/logo.png" class="logo">
+  <div padding>
+    <ion-list class="form">
+      <ion-item class="bg-light">
+        <ion-label>{{"username" | translate}}</ion-label>
+        <ion-input type="text" value="+91 9876543210" text-end></ion-input>
+      </ion-item>
+      <ion-item class="bg-light">
+        <ion-label>{{"password" | translate}}</ion-label>
+        <ion-input type="password" value="*******" text-end></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button full class="bg-green text-white btn round shadow-green" (click)="tabsPage()" text-uppercase>{{"login" | translate}}</button>
+  </div>
+
+  <ion-row padding-start padding-end>
+    <ion-col (click)="signupPage()">
+      <small>{{"new_user" | translate}} <strong class="text-green">{{"sign_up" | translate}}</strong></small>
+    </ion-col>
+    <ion-col text-end>
+      <small>{{"forgot" | translate}} <strong class="text-green">{{"password" | translate}}?</strong></small>
+    </ion-col>
+  </ion-row>
+  <p padding text-center class="option-login"><span>{{"or_continue_with" | translate}}</span></p>
+  <ion-row padding-left padding-right>
+    <ion-col>
+      <button ion-button full icon-start class="bg-blue text-white btn round shadow-blue">
+        <ion-icon name="logo-facebook"></ion-icon>
+        {{"facebook" | translate}}
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button full icon-start class="bg-white text-dark btn round shadow-black">
+        <ion-icon name="logo-googleplus"></ion-icon>
+        {{"google" | translate}}
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-content>

@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>{{"payments" | translate}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-light">
+    <p class="text-light" padding>{{"pmt_method" | translate}}</p>
+    <ion-card>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/icon_cash.png">
+            </ion-avatar>
+            <h1><strong>{{"cash" | translate}}</strong></h1>
+            <p class="text-light"><small>{{"payment_info" | translate}}</small></p>
+        </ion-item>
+    </ion-card>
+    <ion-card>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/icon_card.png">
+            </ion-avatar>
+            <h1><strong>{{"cards" | translate}}</strong></h1>
+            <p class="text-light"><small>{{"cards_info" | translate}}</small></p>
+        </ion-item>
+    </ion-card>
+    <ion-card>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/icon-paytm.png">
+            </ion-avatar>
+            <h1><strong>{{"paytm" | translate}}</strong></h1>
+            <p class="text-light"><small>{{"paytm_info" | translate}}</small></p>
+        </ion-item>
+    </ion-card>
+</ion-content>

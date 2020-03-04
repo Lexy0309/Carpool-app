@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-uppercase>
+      {{"settings" | translate}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-light">
+  <p padding class="text-light"><span padding-left padding-right>{{"map" | translate}} {{"settings" | translate}}</span></p>
+  <ion-card padding>
+    <ion-card-content>
+      <h2>{{"navigation_provider" | translate}}</h2>
+      <p>{{"google_map" | translate}}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card padding>
+    <ion-card-content>
+      <h2 class="d-flex">{{"show_traffic_map" | translate}}
+        <ion-checkbox color="secondary" checked="true"></ion-checkbox>
+      </h2>
+    </ion-card-content>
+  </ion-card>
+  <p padding class="text-light"><span padding-left padding-right>{{"other" | translate}}</span></p>
+  <ion-card padding>
+    <ion-card-content>
+      <h2 class="d-flex">{{"account_status" | translate}}
+        <ion-toggle checked="true" color="secondary"></ion-toggle>
+      </h2>
+    </ion-card-content>
+  </ion-card>
+  <ion-card padding>
+    <ion-card-content>
+      <h2>{{"contacts" | translate}}</h2>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
